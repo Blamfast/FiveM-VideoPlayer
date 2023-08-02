@@ -18,5 +18,9 @@ Remplacez <URL> par l'URL de la vidéo YouTube que vous souhaitez jouer.
 - Redémarrez votre serveur FiveM.
 
 ## Limitations
-L'interaction avec la souris est désactivée pendant la lecture de la vidéo.
-La fin de la vidéo n'est pas détectée, donc la vidéo reste à l'écran jusqu'à ce qu'une nouvelle vidéo soit démarrée.
+- L'interaction avec la souris est désactivée pendant la lecture de la vidéo.
+- La fin de la vidéo n'est pas détectée, donc la vidéo reste à l'écran jusqu'à ce qu'une nouvelle vidéo soit démarrée. __Il faut pour le moment arrêter le script depuis la console.__
+
+## ToDo
+- Ajouter la gestion de fin de vidéo (par timer par exemple...)
+- Ajouter un effet "fade" au début de la vidéo
