@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="video" src="" frameborder="0" allowfullscreen></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            window.addEventListener('message', function(event) {
+                if (event.data.type === 'open') {
+                    $('#video').attr('src', 'https://www.youtube.com/embed/' + event.data.url.split('v=')[1] + '?autoplay=1&controls=0&modestbranding=1');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
